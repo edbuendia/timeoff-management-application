@@ -36,7 +36,7 @@ jobs:
               command: |
                 docker --version
                 docker login -u=$DOCKER_LOGIN -p=$DOCKER_PASSWORD
-                docker build -t buendi/appnode:$CIRCLE_BRANCH --build-arg MACHINE_NAME=<application_name>-$CIRCLE_BRANCH .
+                docker build -t buendi/appnode:$CIRCLE_BRANCH --build-arg MACHINE_NAME=appnode-$CIRCLE_BRANCH .
                 docker push buendi/appnode:$CIRCLE_BRANCH
                 echo "Docker build made sucessfully!! for appnode $CIRCLE_BRANCH"
            - run:
