@@ -156,7 +156,7 @@ Follow instructions on [this page](docs/SessionStoreInRedis.md).
 ## Solution
 ## Diagram 
 
-![TimeOff.Management Screenshot](https://raw.githubusercontent.com/timeoff-management/application/master/public/img/image.png)
+![TimeOff.Management Screenshot](public/img/image.png)
 
 Steps
 
