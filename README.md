@@ -153,6 +153,23 @@ flag to be `true` in the `config/app.json` file.
 
 Follow instructions on [this page](docs/SessionStoreInRedis.md).
 
+## Solution
+## Diagram 
+
+![TimeOff.Management Screenshot](https://raw.githubusercontent.com/timeoff-management/application/master/public/img/image.png)
+
+Steps
+
+1.- Fork to the code TimeOff.Management
+
+2.- Configuring any tool for CI/CD of application in this case I used CircleCi to build this flow automatically. (I addded the file config.yml to build automatically the image)
+
+3.- If I do a commit any change in my repository this action build automaticaly a new image
+
+4.- The new image building is publish in the registry (Docker Hub)
+
+5.- When the image has created satisfactoy We ned to build and infraestructure to deploy the container and run the image.
+
 ## Feedback
 
 Please report any issues or feedback to <a href="https://twitter.com/FreeTimeOffApp">twitter</a> or Email: pavlo at timeoff.management
